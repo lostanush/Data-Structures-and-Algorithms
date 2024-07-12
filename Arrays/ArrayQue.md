@@ -1,67 +1,37 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Array Questions</title>
-</head>
-<body>
-    <p>Sure! Here's an arrangement of the questions based on difficulty levels—Easy, Medium, and Hard—separately for each set.</p>
-    
-    <h2>Initial Set of Questions</h2>
-    
-    <h3>Easy</h3>
-    <ul>
-        <li>268. Missing Number</li>
-        <li>26. Remove Duplicates from Sorted Array</li>
-        <li>Find the Largest and Smallest Numbers</li>
-        <li>Example: Find the largest and smallest numbers in an array.</li>
-    </ul>
-    
-    <h3>Medium</h3>
-    <ul>
-        <li>287. Find the Duplicate Number</li>
-        <li>189. Rotate Array</li>
-        <li>88. Merge Sorted Array</li>
-        <li>349. Intersection of Two Arrays</li>
-    </ul>
-    
-    <h3>Hard</h3>
-    <ul>
-        <li>560. Subarray Sum Equals K</li>
-        <li>53. Maximum Subarray (Kadane's Algorithm)</li>
-        <li>238. Product of Array Except Self</li>
-    </ul>
-    
-    <h2>Additional Set of Questions</h2>
-    
-    <h3>Easy</h3>
-    <ul>
-        <li>1. Two Sum</li>
-        <li>442. Find All Duplicates in an Array</li>
-        <li>169. Majority Element</li>
-        <li>162. Find Peak Element</li>
-    </ul>
-    
-    <h3>Medium</h3>
-    <ul>
-        <li>11. Container With Most Water</li>
-        <li>121. Best Time to Buy and Sell Stock</li>
-        <li>152. Maximum Product Subarray</li>
-        <li>128. Longest Consecutive Sequence</li>
-        <li>713. Subarray Product Less Than K</li>
-        <li>73. Set Matrix Zeroes</li>
-        <li>15. 3Sum</li>
-    </ul>
-    
-    <h3>Hard</h3>
-    <ul>
-        <li>18. 4Sum</li>
-        <li>4. Median of Two Sorted Arrays</li>
-        <li>54. Spiral Matrix</li>
-    </ul>
-    
-    <h2>Summary</h2>
-    <p>By working through these problems, starting from the easy ones and progressing to the harder ones, you'll build a solid foundation and gradually increase your problem-solving skills. This approach will help you tackle array-based questions more effectively in interviews.</p>
-</body>
-</html>
+# Array Questions
+
+Sure! Here's an arrangement of the questions based on difficulty levels—Easy, Medium, and Hard—separately for each set.
+
+## Initial Set of Questions
+
+### Easy
+- 268. Missing Number
+- 26. Remove Duplicates from Sorted Array
+- Find the Largest and Smallest Numbers
+- Example: Find the largest and smallest numbers in an array.
+
+### Medium
+- 287. Find the Duplicate Number
+- 189. Rotate Array
+- 88. Merge Sorted Array
+- 349. Intersection of Two Arrays
+
+### Hard
+- 560. Subarray Sum Equals K
+- 53. Maximum Subarray (Kadane's Algorithm)
+- 238. Product of Array Except Self
+
+## Additional Set of Questions
+
+### Easy
+- 1. Two Sum
+- 442. Find All Duplicates in an Array
+- 169. Majority Element
+- 162. Find Peak Element
+
+### Medium
+- 11. Container With Most Water
+- 121. Best Time to Buy and Sell Stock
+- 152. Maximum Product Subarray
+- 128. Longest Consecutive Sequence
+- 713
