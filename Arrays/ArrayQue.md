@@ -34,4 +34,15 @@ Sure! Here's an arrangement of the questions based on difficulty levels—Easy, 
 - 121. Best Time to Buy and Sell Stock
 - 152. Maximum Product Subarray
 - 128. Longest Consecutive Sequence
-- 713
+- 713. Subarray Product Less Than K
+- 73. Set Matrix Zeroes
+- 15. 3Sum
+
+### Hard
+- 18. 4Sum
+- 4. Median of Two Sorted Arrays
+- 54. Spiral Matrix
+
+## Summary
+
+By working through these problems, starting from the easy ones and progressing to the harder ones, you'll build a solid foundation and gradually increase your problem-solving skills. This approach will help you tackle array-based questions more effectively in interviews.
