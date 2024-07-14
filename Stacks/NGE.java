@@ -2,7 +2,7 @@ package Stacks;
 import java.util.Stack;
 import java.util.Arrays;
 
-public class NGE1 {
+public class NGE {
 
     public static int[] NGE(int[] arr){
         int n= arr.length;
