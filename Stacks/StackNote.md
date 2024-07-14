@@ -4,7 +4,7 @@
  *  Que 2)  reverse a String :  reverseString
  *  Que 3)  reverse a Stack  :  reverseStack
  *  Que 4)  stock span       :  stockPlan / calculateSpan
- *  Que 5)  next greatest no.:  NGE
+ *  Que 5)  next greatest no :  NGE
  *  Que 6)  valid parantheses:  isValid
  *  Que 7)  double parantheses: 
  *  Que 8)  Histogram : 
