@@ -1,4 +1,4 @@
-<h1>Stacks</h1>  LeetCode Ranks 
+<h1>Stacks</h1>  
       
  *  Que 1)  PushAtBottom     :  pushAtBottom
  *  Que 2)  reverse a String :  reverseString
@@ -9,7 +9,8 @@
  *  Que 7)  double parantheses: 
  *  Que 8)  Histogram : 
  
-  
+
+LeetCode Ranks   
 20 : Valid Parentheses  
 Duplicate paranthesis  
 496 : Next Greater Element I  
