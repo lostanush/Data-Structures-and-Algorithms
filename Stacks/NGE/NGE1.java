@@ -1,4 +1,4 @@
-package Stacks.NextGreaterElement;
+package Stacks.NGE;
 import java.util.Stack;
 import java.util.Arrays;
 
