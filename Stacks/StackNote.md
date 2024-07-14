@@ -7,7 +7,7 @@
 
 Histogram 
 
-/*
+
  *  Que 1)  PushAtBottom     :  pushAtBottom
  *  Que 2)  reverse a String :  reverseString
  *  Que 3)  reverse a Stack  :  reverseStack
@@ -16,4 +16,4 @@ Histogram
  *  Que 6)  valid parantheses:  isValid
  *  Que 7)  double parantheses: 
  *  Que 8)  Histogram : 
- */
+ 
