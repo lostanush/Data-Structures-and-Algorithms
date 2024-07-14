@@ -1,10 +1,12 @@
+// Que [5] : Next-Greater-Element
+
 package Stacks;
 import java.util.Stack;
 import java.util.Arrays;
 
 public class NGE {
 
-    public static int[] NGE(int[] arr){
+    public static int[] NextGreaterElement(int[] arr){
         int n= arr.length;
         int[] NGE = new int[n];
         Arrays.fill(NGE,-1);
@@ -23,7 +25,7 @@ public class NGE {
     }
     public static void main(String[] args) {
         int arr[] = {4,5,2,25};
-        int NGE[] = NGE(arr);
+        int NGE[] = NextGreaterElement(arr);
         System.out.println(Arrays.toString(NGE));
     }
 }
