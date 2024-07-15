@@ -23,6 +23,41 @@ public class TwoSum {
         return false;
     }
 
+    
+    // Method : 2 pointer approch
+    public static boolean twoSum2(ArrayList <Integer>list,int target){
+        int bp=0; //breaking point
+        for(int i=0;i<list.size();i++){
+            if(list.get(i)>list.get(i)){
+                bp= i;
+                break;
+            }
+        }
+        int lp= bp+1; //smallest
+        int rp= bp;
+
+        while (lp != rp) {
+            int sum = list.get(lp) + list.get(rp);
+            int n = list.size();
+
+            // Case 1:
+            if (sum == target) {
+                //System.out.println("Found!!");
+                return true;
+            } 
+            //case 2:
+            if (sum < target) {  
+                lp= (lp+1)%list.size();                // Move the left pointer to the right to increase the sum
+            } else {  
+                // Case 3: 
+                rp= (n+rp-1)%n;                                 // Move the right pointer to the left to decrease the sum
+            }
+        }
+        return false;
+        
+    }
+
+
     public static void main (String args[]){
         
         int[] arr = {1,2,3,4,5,6};
