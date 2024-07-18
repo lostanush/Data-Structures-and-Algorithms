@@ -10,12 +10,12 @@ Get element  -         O(1)
 remove element -       O(n)
 Set element at Index - O(1)
 Contains element -     O(1)  
-
-Reverse,Maxelement,swap,sort
-que 1): Container with MOST_WATER;
-que 2): TargetValue- PairSum1
-que 3): TargetValue- PariSum2- sorted & rotated 
-
+  
+Reverse,Maxelement,swap,sort  
+que 1): Container with MOST_WATER;  
+que 2): TargetValue- PairSum1  
+que 3): TargetValue- PariSum2- sorted & rotated   
+  
 
 ### Easy
 - **268.** Missing Number
