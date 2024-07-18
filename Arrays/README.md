@@ -5,11 +5,11 @@ Sure! Here's an arrangement of the questions based on difficulty levels—Easy, 
 ## Initial Set of Questions
 
 ArrayList :  
-add element -          O(1) , .size(); .get(i);
-Get element  -         O(1)
-remove element -       O(n)
-Set element at Index - O(1)
-Contains element -     O(1)  
+add element -          O(1) , .size(); .get(i);   
+Get element  -         O(1)  
+remove element -       O(n)  
+Set element at Index - O(1)  
+Contains element -     O(1)    
   
 Reverse,Maxelement,swap,sort  
 que 1): Container with MOST_WATER;  
