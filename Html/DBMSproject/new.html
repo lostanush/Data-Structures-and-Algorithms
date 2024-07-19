@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <!-- You may include CSS links for styling -->
+</head>
+<body>
+    <div class="login_page">
+        <div class="container">
+            <div class="login_panel col-md-4 col-sm-4">
+                <div class="login_header">
+                    <div class="login">
+                        <div class="table_top_login"  colspan="4"><span>LOG IN</span></div>
+                    </div>
+                </div>
+                <div class="login_area row">
+                    <div class="form-group">
+                        <div class="col-md-4 col-sm-4 login_col">User Name</div>
+                        <div class="col-md-8 col-sm-8 login_col">
+                            <input type="text" placeholder="User Name" id="txtUserName" class="form-control" required>
+                        </div>
+                    </div>
+                </div>
+                <div class="login_area row">
+                    <div class="form-group">
+                        <div class="col-md-4 col-sm-4 login_col">Password</div>
+                        <div class="col-md-8 col-sm-8 login_col">
+                            <input type="password" placeholder="Password" id="txtPassWord" class="form-control" required>
+                        </div>
+                    </div>
+                </div>
+                <div class="login_btn">
+                    <div>
+                        <button id="BtnLogin" class="btn btn-md btn-success login_button">LogIn</button>
+                    </div>
+                </div>
+                <div class="regi_frorm">
+                    <a href="register_appoinment.aspx">Registration</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // JavaScript code to handle button click event
+        document.getElementById("BtnLogin").addEventListener("click", function() {
+            var userName = document.getElementById("txtUserName").value;
+            var password = document.getElementById("txtPassWord").value;
+
+            // You can perform any desired action here, such as form validation or sending data to server using AJAX
+            // For example, to send data to a server using AJAX:
+            /*
+            var xhr = new XMLHttpRequest();
+            xhr.open("POST", "login_process.php", true);
+            xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState === 4 && xhr.status === 200) {
+                    // Handle the response from the server
+                }
+            };
+            var data = "username=" + encodeURIComponent(userName) + "&password=" + encodeURIComponent(password);
+            xhr.send(data);
+            */
+        });
+    </script>
+</body>
+</html>

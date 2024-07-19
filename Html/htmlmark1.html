@@ -1,0 +1,139 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+<title>
+    BookStoreFormPage
+</title>
+<style>     
+
+input:invalid {
+  border: 1px dashed black;
+}
+
+input:invalid:required {
+  background-image: linear-gradient(to right, lightblue, lightyellow);
+}
+
+input:valid {
+  border: 2px solid black;
+}
+
+<script>
+function validateForm() {
+  let x = document.forms["myForm"]["fname"].value;
+  if (x == "") {
+    alert("Name must be filled out");
+    return false;
+  }
+}
+</script>
+
+    body {  
+        background-color: ;
+    }
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: grey;
+    }
+    input{
+        padding: 5px;
+        shape-rendering: ;
+    }
+    li {
+        float: left;
+    }
+    li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+    li a:hover:not(.active) {
+        background-color: #111;
+    }
+    .active {
+        background-color: bisque;
+        color: #111;
+    }
+    h1 {
+        background-color:beige ;
+        margin-top: 0%;
+        margin-left: 0%;
+        margin-right: 0%;
+        padding: 20px;
+    }
+    div {
+        border-radius: 5px;
+        background-image: url("hand.jpg");
+        background-repeat: no-repeat;
+        background-position: cover;
+        background-size: cover;
+        padding: 10px;
+
+        width: fit-content;
+        
+    }
+</style>
+</head>
+<body>
+    
+    <h1 ><u>JavaScript </u></h1>
+    
+
+    
+    <H3>The Form : </H3><br>
+    
+    <div>
+        <form onsubmit="takevalue">
+            <H3 style="text-align: center;">Customer Registration </H3>
+            <label for="name">
+            <b>First: <t></b>  (max input 15 letters) <br> <input type="text" value="" id="name" maxlength="15" required> <br><br>
+            <label for="phone"><b> Phone:</b><br></label>
+            <input type="number" id="phone"
+                   name="phone" pattern="[0-9]{10}"
+                   placeholder="Enter 10-digit mobile number"
+                   required><br><br>
+            
+            <b>Email : </b>    <br> <input type="email" value="" required><br><br>
+            <b>Password :</b>  <br> <input type="text" value="*****" required><br><br>
+            <b>Gender</b>      <br>
+                <input type="radio" name="Gender">Male
+                <input type="radio" name="Gender">Female <br><br>
+            
+            <b> Checkbox</b><br>
+                
+                <input type="checkbox" name="checkbox"> I agree to your terms and conditions. <br><br>
+            
+            <input type="file"><br><br>
+            <input type="reset" >
+            <input type="submit">
+
+        </form>
+    </div>
+
+    <script>
+        function validateForm() {
+        let x = document.forms["myForm"]["fname"].value;
+        if (x == "") {
+            alert("Name must be filled out");
+        return false;
+             }
+        }
+    </script>
+    
+
+<form>
+  <input  required />
+  
+</form>
+
+   
+
+<h3>Hello World</h3>
+
+</body>
+</html>

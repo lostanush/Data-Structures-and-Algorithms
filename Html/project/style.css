@@ -1,0 +1,38 @@
+#top-nav-bar{
+    background-color: white;
+    text-decoration: none;
+    text-align: center;
+}
+#top-nav-bar .bar .nevigation a{
+ padding: 20px;
+ text-decoration: none;
+ font-size: xx-large;
+ color: rgb(11, 6, 6);
+}
+#top-nav-bar .bar .nevigation a:hover{
+    color: yellowgreen;
+}
+.book{
+    display: flex;
+    justify-content: center;
+}
+header div{
+    background-color: rgb(249, 248, 248);
+/*div$*4 we get 4 div*/
+}
+.side{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(140, 240, 131);
+   
+}
+.side div{
+    padding:20px;
+    font-size: 20px;
+   /* margin:5px;*/
+}
+@media screen and (max-width:1366){
+    .side{
+        display: none;
+    }
+}

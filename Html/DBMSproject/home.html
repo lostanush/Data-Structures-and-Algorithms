@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Form Validation</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1 ><u> BookStore FormPage </u></h1>
+    <H3><u><b><i>The Form : </i></b></u></H3>
+<div>
+    <form id="myForm" method="post" action="connect.php" onsubmit="return validateForm()">
+        
+        <H3 style="text-align: center;"><u><b><I>Customer Registration</I></b></u> </H3><br>
+
+        <label for="name"><b>Name:</b></label> <br>
+        <input type="text" id="name" name="name" required><br><br>
+        
+        <label for="password"><b>Pin:</b></label> <br>
+        <input type="password" id="password" name="password" required><br><br>
+        
+        <button type="reset">Reset</button>
+        <button type="submit">Submit</button> 
+    </form>
+    
+</div>    
+</body>
+</html>

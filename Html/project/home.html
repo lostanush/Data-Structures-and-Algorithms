@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeCraft | Learn to Code for Free</title>
+    <link rel="stylesheet" href="styleh.css">
+    <link rel="wesite icon" type="png" href="f32b0d6b496342eaba8da6772c39b3e9.png">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="container">
+         <a href="home.html" class="logo"> <img src="logo.png" alt="Your Company Logo"></a>      
+        
+         <div class="login-container">
+            <a href="secondlog.html" class="btn">Login</a>
+          </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">About Us</a></li>
+                </ul>
+            </nav>
+           
+        </div>
+       
+            <nav class="na">
+                <a href="c.html">C</a>
+                <a href="c++.html">C++</a>
+                <a href="#python">Python</a>
+                <a href="#html">HTML</a>
+                <a href="#css">CSS</a>
+                <a href="javascript.html">JavaScript</a>
+                <a href="java.html">Java</a>
+            </nav>
+           
+    </header>
+    
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>Unlock Your Coding Potential</h1>
+                <p>Learn in-demand coding skills for free and build a fulfilling career in tech.</p>
+                <button id="play-button">Watch Intro Video (Optional)</button>
+                <div class="video-wrapper">
+                    <video id="hero-video" muted autoplay loop playsinline controls>
+                        <source src="Unlock Your Coding Potential Now! Join CodeCraft for Free!.mp4" type="video/mp4">
+                        <source src="Unlock Your Coding Potential Now! Join CodeCraft for Free!.mp4" type="video/webm">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+        </section>
+
+        <section class="benefits">
+            <div class="container">
+                <h2>Why Choose CodeCraft?</h2>
+                <ul>
+                    <li>
+                        <img src="https://www.pngkey.com/png/full/5-52840_code-icon-png-free-coding-for-kids.png" alt="Code Icon">
+                        <h3>Interactive Lessons</h3>
+                        <p>Learn by doing with bite-sized lessons and coding exercises.</p>
+                    </li>
+                    <li>
+                        <img src="https://th.bing.com/th/id/OIP.llRPIYM8V4b3vuhLWUi_YAHaFj?rs=1&pid=ImgDetMain" alt="Languages Icon">
+                        <h3>Popular Languages</h3>
+                        <p>Master the fundamentals of HTML, CSS, JavaScript, and Python.</p>
+                    </li>
+                    <li>
+                        <img src="https://cdn-icons-png.flaticon.com/512/8348/8348232.png" alt="Trophy Icon">
+                        <h3>Gamified Learning</h3>
+                        <p>Stay motivated with points, badges, and leaderboards.</p>
+                    </li>
+                    <li>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQa7pcKCCTghYRQHRKzxGLfzIs0rZphP1lFT0MCaB2JKw&s" alt="Community Icon">
+                        <h3>Supportive Community</h3>
+                        <p>Connect with fellow learners and get expert help in our forum.</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="call-to-action">
+            <div class="container">
+                <h2>Ready to Start Coding?</h2>
+                <a href="#" class="btn btn-primary">Get Started (Free)</a>
+                <p>Upgrade to Premium for in-depth courses, personalized learning paths, and more.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; CodeCraft 2024</p>
+        </div>
+    </footer>
+
+    <script src="script.js">
+        // script.js
+
+const heroTitle = document.querySelector('.hero h1');
+const heroText = document.querySelector('.hero p');
+
+// Function to animate text with a typing effect
+function typeWriter(text, element) {
+  let i = 0;
+  let speed = 75; // Adjust speed (lower is faster)
+  const interval = setInterval(function() {
+    if (i < text.length) {
+      element.textContent += text.charAt(i);
+      i++;
+    } else {
+      clearInterval(interval);
+    }
+  }, speed);
+}
+
+// Start the typing animation for title and text
+typeWriter('Unlock Your Coding Potential', heroTitle);
+setTimeout(function() {
+  typeWriter('Learn in-demand coding skills for free and build a fulfilling career in tech.', heroText);
+}, 1000); // Start text animation after 1 second delay
+
+    </script>
+</body>
+</html>

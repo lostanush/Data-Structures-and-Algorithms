@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Java Tutorial</title>
+  <link rel="stylesheet" href="style.css"> <!-- You can link your CSS file here -->
+</head>
+<body>
+  
+  <header>
+    <div class="menu-toggle">
+      <button id="menu-button">&#9776;</button> </div>
+    <nav>
+        <a href="#java-intro">Java Introduction</a>
+        <a href="#java-syntax">Java Syntax</a>
+        <a href="#java-oop">Java OOP</a>
+        <!-- Add more links for different sections of the tutorial -->
+    </nav>
+  </header>
+  
+  <h3 style="text-align: center;">Home</h3>
+  
+  <div class="container">
+    <div class="sidebar">
+      <h2>Topics</h2>
+      <ul class="topics">
+        <li class="topic-item active" data-target="#java-intro" data-id="1">Java Introduction</li>
+        <li class="topic-item" data-target="#java-syntax" data-id="2">Java Syntax</li>
+        <li class="topic-item" data-target="#java-oop" data-id="3">Java OOP</li>
+        <!-- Add more topic items as needed -->
+      </ul>
+    </div>
+    <div class="main-content">
+        
+        <div id="java-intro" class="topic-description active">
+            <h1>Java Tutorial</h1>
+            <div class="col">
+            <h1>Learn Java</h1>
+            <p>Java is a popular programming language.<br>
+                Java is used to create server-side applications, desktop applications, mobile applications, and web applications.</p>
+            </div>    
+            <h1>Examples in Each Chapter</h1>
+            <p>Our "Try it Yourself" editor makes it easy to learn Java. You can edit Java code and view the result in your browser.
+            <div class="ex">
+              <h1>Example</h1>
+              <div>
+                  <p>// Hello, World! Program in Java
+                    <br>
+                    public class HelloWorld {
+                    <br>
+                      &nbsp; public static void main(String[] args) {
+                    <br>
+                      &nbsp;&nbsp;    System.out.println("Hello, World!"); 
+                    <br>
+                      &nbsp; }
+                    <br>
+                    }
+                  </p>
+                <button class="b">Try it Yourself</button>
+              </div>
+            </div>  
+        <h2>Click on the "Run example" button to see how it works.</h2>
+        <!-- Add more content for Java introduction -->
+        </div><!---end of topic 1--->
+        
+        <!-- Add more topic descriptions for other sections of the tutorial -->
+
+    </div><!---end of main-content--->
+  </div><!---end of container-->
+
+  <footer>
+    <div class="container">
+        <p>&copy; YourWebsiteName 2024</p>
+    </div>
+  </footer>
+
+  <script>
+    // JavaScript code for toggling the menu and handling topic clicks can be placed here
+  </script>
+
+</body>
+</html>

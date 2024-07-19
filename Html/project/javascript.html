@@ -1,0 +1,189 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LearnJava</title>
+  <link rel="stylesheet" href="stylec.css">
+  
+</head>
+<body>
+  <header>
+    <div class="menu-toggle">
+      <button id="menu-button">&#9776;</button> </div>
+    <!---<div class="menu-button">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </div>-->
+    <nav>
+        <a href="#c">C</a>
+        <a href="#cpp">C++</a>
+        <a href="#python">Python</a>
+        <a href="#html">HTML</a>
+        <a href="#css">CSS</a>
+        <a href="#javascript">JavaScript</a>
+        <a href="java.html">Java</a>
+    </nav>
+</header>
+  <div class="container">
+    <div class="sidebar">
+      <h2>Topics</h2>
+      <ul class="topics">
+        <li class="topic-item active"data-target="#topic1"data-id="1">Java HOME</li>
+        <li class="topic-item" data-target="#topic2"data-id="2">Java Intro</li>
+        <li class="topic-item" data-target="#topic3" data-id="3">Java variable</li>
+        <li class="topic-item" data-target="#topic4" data-id="4">Java Data Types</li>
+        <li class="topic-item" data-target="#topic5" data-id="5">Java Output</li>
+        <li class="topic-item" data-target="#topic6" data-id="6">Java Comment</li>
+        <li class="topic-item" data-target="#topic7" data-id="7">Java variable</li>
+        <li class="topic-item" data-target="#topic8" data-id="8">Java Data Type</li>
+      </ul>
+    </div>
+    <div class="main-content">
+        
+        <div id="topic1" class="topic-description active">
+            <h1>JavaScript Tutorial</h1>
+            <div class="col">
+            <h1>Learn JavaScript</h1>
+            <p>JavaScript is the world's most popular programming. <br>
+                JavaScript is the programming language of the Web.     <br>           
+                JavaScript is easy to learn. <br>
+                This tutorial will teach you JavaScript from basic to advanced. <br>
+            </p>
+        </div>    
+        
+        <div>
+            <h1>Use the Menu</h1>
+            <p>We recommend reading this tutorial, in the sequence listed in the menu. <br>
+                If you have a large screen, the menu will always be present on the left. <br> 
+                If you have a small screen, open the menu by clicking the top menu sign ☰. <br>
+            </p>
+        </div>
+
+        <div>
+        <h1>Learn by Examples</h1>
+        <p>Examples are better than 1000 words. Examples are often easier to understand than text explanations. <br>
+            This tutorial supplements all explanations with clarifying "Try it Yourself" examples.</p>
+        </div>
+
+        <div>
+            <h1>Why Study JavaScript?</h1>
+            <p>JavaScript is one of the 3 languages all web developers must learn. <br>
+                1. HTML to define the content of web pages <br>
+                2. CSS to specify the layout of web pages <br>
+                3. JavaScript to program the behavior of web pages</p>
+        </div>
+
+        <div style="background-color: #aaf0c9; padding: 20px;">
+            <p> This tutorial covers every version of JavaScript:
+                <ol>
+                    <li>The Original JavaScript ES1 ES2 ES3 (1997-1999)</li>
+                    <li>The First Main Revision ES5 (2009)</li>
+                    <li>The Second Revision ES6 (2015)</li>
+                    <li>The Yearly Additions (2016, 2017 ... 2021, 2022)</li>
+                </ol>
+            </p>
+        </div>
+    </div><!---end of topic 1--->
+      
+      <div1 id="topic2" class="topic-description">
+        <h1>JavaScript Introduction</h1>
+        <div  style="background-color: #aaf0c9; padding: 20px;">
+            <p> This page contains some examples of what JavaScript can do. <br><br>
+            </p>
+        </div>
+
+        <button class="left">previous</button> <button class="right">Next</button>
+        <div>
+          <br>
+          <hr>
+          <h1>JavaScript Can Change HTML Content</h1>
+          <p>
+            One of many JavaScript HTML methods is getElementById(). <br>
+            The example below "finds" an HTML element (with id="demo"), and changes the element content (innerHTML) to "Hello JavaScript":
+          </p>
+          <hr>
+        </div>
+        <div>
+          <h1>Did You Know?</h1>
+          <p>
+            
+            JavaScript and Java are completely different languages, both in concept and design.
+            <br>
+            JavaScript was invented by Brendan Eich in 1995, and became an ECMA standard in 1997.
+            <br>
+            ECMA-262 is the official name of the standard. ECMAScript is the official name of the language.
+            
+          </p> <br> 
+        </div>
+        <div>
+              <h1>Difference between Java and C++</h1>
+              <p>
+                Java was developed as an extension of C, and both languages have almost the same syntax. <br>
+                The main difference between C and C++ is that C++ support classes and objects, while C does not.
+              </p>
+        </div>
+        <div>
+              <h1>Get Started</h1>
+              <p>
+                This tutorial will teach you the basics of Java. <br>
+                It is not necessary to have any prior programming experience.
+              </p>
+        </div>
+      </div1>
+      <div2 id="topic3" class="topic-description"></div2>
+      <div3 id="topic4" class="topic-description"></div3>
+      <div4 id="topic5" class="topic-description"></div4>
+      <div5 id="topic5" class="topic-description"></div5>
+      <footer>
+        <div class="container">
+            <p>&copy; CodeCraft 2024</p>
+        </div>
+    </footer>
+    </div><!---end of main-content--->
+  </div><!----end of container-->
+  
+  
+  <script>
+  const topicItems = document.querySelectorAll('.topic-item');
+
+topicItems.forEach(item => {
+  item.addEventListener('click', () => {
+    const targetId = item.dataset.target;
+    const topicDescriptions = document.querySelectorAll('.topic-description');
+
+    topicDescriptions.forEach(description => {
+      description.classList.remove('active');
+    });
+
+    document.querySelector(targetId).classList.add('active');
+
+    topicItems.forEach(item => {
+      item.classList.remove('active');
+    });
+
+    item.classList.add('active');
+  });
+});
+
+const menuButton = document.getElementById('menu-button');
+const leftNavbar = document.querySelector('.sidebar');
+
+// Initially set left navbar to display: none (hidden) using JavaScript
+leftNavbar.style.display = 'none';
+
+menuButton.addEventListener('click', () => {
+  if (leftNavbar.style.display === 'none') {
+    leftNavbar.style.display = 'block'; // Show navbar on click
+  } else {
+    leftNavbar.style.display = 'none';   // Hide navbar on click
+  }
+});
+
+  </script>
+</body>
+</html>
+c++.html
+Displaying c++.html.

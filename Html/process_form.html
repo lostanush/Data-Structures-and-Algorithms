@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Form Validation</title>
+<style>
+    div {
+        border-radius: 10px;
+        border: 2px solid grey;
+        background-image: url("hand.jpg");
+        background-repeat: no-repeat;
+        background-position: cover;
+        background-size: cover;
+        padding: 40px;
+        width: fit-content;
+    }
+    h1 {
+        background-color:beige ;
+        margin-top: 0%;
+        margin-left: 0%;
+        margin-right: 0%;
+        padding: 20px;
+    }
+</style>
+</head>
+<body>
+    <h1 ><u> BookStore FormPage </u></h1>
+    <H3>The Form : </H3><br>
+<div>
+    <form id="myForm" action="process_form.html" method="post" onsubmit="storeFormData()">
+        <H3 style="text-align: center;"><u><b><I>Customer Registration</I></b></u> </H3><br>
+
+        <label for="name"><b>Name:</b></label> <br>
+        <input type="text" id="name" name="name" required><br><br>
+        
+        <label for="email"><b>Email:</b></label> <br>
+        <input type="email" id="email" name="email" required><br><br>
+        
+        <label for="mobile"><b>Mobile Number:</b></label> <br>
+        <select id="countryCode" name="countryCode">
+            <option value="+1">+1 (USA)</option>
+            <option value="+44">+44 (UK)</option>
+            <option value="+91">+91 (India)</option>
+            <!-- Add more options as needed -->
+        </select>
+        <input type="tel" id="mobile" name="mobile" required><br><br>
+        
+        <label for="customerID"><b>Customer ID:</b></label> <br>
+        <input type="text" id="customerID" name="customerID" required><br><br>
+        
+        <label for="password"><b>Password : </b></label> <br>
+        <input type="password" id="password" name= "password" required> <br><br>
+
+        <label for="Gender"><b>Gender</b></label> <br>
+                <input type="radio" name="Gender">Male
+                <input type="radio" name="Gender">Female <br><br>
+            
+        <label for="checkbox"><b> Checkbox</b></label> <br>
+                <input type="checkbox" name="checkbox"> I have read all the tearms and conditions. <br>
+                <input type="checkbox" name="checkbox"> I agree to your terms and condition. <br><br>
+            
+        <input type="file"><br><br>
+        <button type="reset">Reset</button>
+        <button type="submit">Submit</button> 
+    </form>
+    
+</div>
+
+<script>
+document.getElementById('myForm').addEventListener('submit', function(event) {
+    // Get the value of the name input
+    var nameInput = document.getElementById('name').value;
+    
+    // Get the value of the email input
+    var emailInput = document.getElementById('email').value;
+    
+    // Get the value of the country code input
+    var countryCodeInput = document.getElementById('countryCode').value;
+    
+    // Get the value of the mobile input
+    var mobileInput = document.getElementById('mobile').value;
+    
+    // Get the value of the customer ID input
+    var customerIDInput = document.getElementById('customerID').value;
+    
+    // Define regular expression patterns for validation
+    var namePattern = /^[A-Z][A-Za-z0-9]{0,14}$/;
+    var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    var mobilePattern = /^\d{6,14}$/; // Example: 1234567890123
+    var customerIDPattern = /^CUSTID[A-Za-z0-9]{5}$/; // Example: CUSTID1A2B3C4
+    
+    // Check if the name input matches the pattern
+    if (!namePattern.test(nameInput)) {
+        // Prevent the form from submitting
+        event.preventDefault();
+        
+        // Display an error message for name
+        alert('Name must start with a capital letter, be no more than 15 characters long, and contain only alphanumeric characters.');
+    }
+
+    // Check if the email input matches the pattern
+    if (!emailPattern.test(emailInput)) {
+        // Prevent the form from submitting
+        event.preventDefault();
+        
+        // Display an error message for email
+        alert('Please enter a valid email address.');
+    }
+
+    // Check if the mobile input matches the pattern
+    if (!mobilePattern.test(mobileInput)) {
+        // Prevent the form from submitting
+        event.preventDefault();
+        
+        // Display an error message for mobile
+        alert('Please enter a valid mobile number. Example: 1234567890123');
+    }
+
+    // Check if the customer ID input matches the pattern
+    if (!customerIDPattern.test(customerIDInput)) {
+        // Prevent the form from submitting
+        event.preventDefault();
+        
+        // Display an error message for customer ID
+        alert('Customer ID must start with "CUSTID" followed by 5 alphanumeric characters.');
+    }
+});
+</script>
+
+</body>
+</html>
