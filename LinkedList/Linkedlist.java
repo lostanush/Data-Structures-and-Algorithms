@@ -1,11 +1,6 @@
 //linked list code - written on 4th sem @anushdighore 
 //add 3 - addFirst,addLast,add;
 //remove 3 - removeFirst,removeLast,remove
-//reverse ll
-//check palindrome
-//check iscycle : Floyd's CFA 
-//MergeSOrt
-//convert into zigzag ll 1-> n-> 2-(n-1)....mid
 
 import java.util.Scanner;
 public class Linkedlist {
