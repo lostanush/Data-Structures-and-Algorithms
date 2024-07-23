@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 
 public class Basic {
-
+    
     static void swap1(ArrayList <Integer>list, int idx1,int idx2){
         int temp=list.get(idx1);
         list.set(idx1, list.get(idx2));
